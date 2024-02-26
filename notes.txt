@@ -1,0 +1,30 @@
+
+Hallucination:
+
+	A response that is either inaccurate or *irrelevant*
+
+	Measuring hallucinations:
+
+		Prompt-response relevance: measure the similarity (cosine similarity) between response and prompt
+
+		Response self-similarity: compare the similarity between multiple responses to the same prompt
+
+Data leakage:
+
+	Should not contain PII. It can happen two ways: in the prompt (by the user themselves), or in the response (model data leakage / memorization)
+
+	We will use pre-trained models on the query and model's response to check whether there is any data leakage
+
+Toxicity:
+
+	Explicit toxic language
+
+	We will use pre-trained models on the query and model's response to check whether there is any data leakage
+
+Refusals and prompt injections:
+
+	Prompt injection is getting the LLM to do something which the designers did not intend them to do
+
+	We will use pre-trained models on the query and model's response to check whether there is any data leakage
+
+
